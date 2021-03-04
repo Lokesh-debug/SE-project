@@ -8,7 +8,7 @@ function App() {
     }
     const [user,setUser] = useState({name: "",email: ""});
     <div className= 'App'>
-        <h1>Hello world</h1>
+        <h1>Hello </h1>
     </div>
 };
 
