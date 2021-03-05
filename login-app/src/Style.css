@@ -1,0 +1,23 @@
+
+
+.form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+
+.login-form {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin:auto;
+  height: 100%;
+}

@@ -1,15 +1,36 @@
-import React, {useState} from 'react';
-import "./App.css";
+import React, { Component } from 'react';
+import './Style.css';
+import { Button, Form , FormGroup , Label , Input } from 'reactstrap';
 
-function App() {
-    const adminUser= {
-        email:"admin12@gmail.com",
-        password:"admin123"
-    }
-    const [user,setUser] = useState({name: "",email: ""});
-    <div className= 'App'>
-        <h1>Hello </h1>
-    </div>
-};
+
+ class App extends Component {
+  render() {
+    return (
+    <Form className='login-form'>
+      <h1>
+        <span className="font-weight-bold">mywebsite</span>.com
+      </h1>
+      <h2 className="text-center">Login Please</h2>
+      <FormGroup>
+         <Label>Email</Label>
+          <Input type="email" placeholder="Email"/>
+      </FormGroup>
+      <FormGroup>
+         <Label>Password</Label>
+          <Input type="password" placeholder="Password"/>
+      </FormGroup>
+      <Button className="btn-lg btn-dark btn-block">Log in</Button>
+      <div className="text-center pt-3">Or continue with Google account</div>
+      
+      <div className="text-center">
+        <a href="/Sign-up">Sign-up</a>
+        <span className="p-2">|</span>
+        <a href="/forgot-password">Forgot Password</a>
+      </div>
+    </Form> 
+    );  
+}
+}
+  
 
 export default App;
