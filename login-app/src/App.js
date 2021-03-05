@@ -23,7 +23,7 @@ import { Button, Form , FormGroup , Label , Input } from 'reactstrap';
       <div className="text-center pt-3">Or continue with Google account</div>
       
       <div className="text-center">
-        <a href="/Sign-up">Sign-up</a>
+        <a href="/Sign-up" >Sign-up</a>
         <span className="p-2">|</span>
         <a href="/forgot-password">Forgot Password</a>
       </div>
