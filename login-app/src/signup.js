@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import  './Style.css';
 
-class form extends Component {
+export default class signup extends Component {
     constructor(props) {
         super(props)
          this.state= {
@@ -66,4 +66,3 @@ class form extends Component {
 
 }
 
-export default signup;  

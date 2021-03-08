@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import './Style.css';
 import { Button, Form , FormGroup , Label , Input } from 'reactstrap';
+import  './signup';
+import history from './history';
+
 
 
  class App extends Component {
+  
   render() {
     return (
     <Form className='login-form'>
@@ -23,14 +27,18 @@ import { Button, Form , FormGroup , Label , Input } from 'reactstrap';
       <div className="text-center pt-3">Or continue with Google account</div>
       
       <div className="text-center">
-        <a href="/Sign-up" >Sign-up</a>
+        <a href="/Sign-up" onClick={() => history.push('/signup')}>Sign-up</a>
         <span className="p-2">|</span>
         <a href="/forgot-password">Forgot Password</a>
       </div>
-    </Form> 
-    );  
+    </Form>
+
+    ); 
+    
+    
 }
 }
-  
+
+
 
 export default App;
