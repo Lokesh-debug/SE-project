@@ -3,7 +3,7 @@ import './Style.css';
 import { Button, Form , FormGroup , Label , Input } from 'reactstrap';
 import  './signup';
 import history from './history';
-
+import './login';
 
 
  class App extends Component {
@@ -23,7 +23,7 @@ import history from './history';
          <Label>Password</Label>
           <Input type="password" placeholder="Password"/>
       </FormGroup>
-      <Button className="btn-lg btn-dark btn-block">Log in</Button>
+      <Button className="btn-lg btn-dark btn-block" onClick={() => history.push('/login')}>Log in</Button>
       <div className="text-center pt-3">Or continue with Google account</div>
       
       <div className="text-center">
