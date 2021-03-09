@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 import { Router, Switch, Route } from "react-router-dom";
 
-import App from "./App";
-import login from './login';
-import register from "./signup";
-import history from './history';
+import App from './App' ;
+import Login from './login';
+import Form from './form';
+import History from './history';
 
 export default class Routes extends Component {
     render() {
         return (
-            <Router history={history}>
+            <Router history={History}>
                 <Switch>
                     <Route path="/" exact component={App} />
-                    <Route path="/signup" component={register} />
-                    <Route path="/login" component={login} />
+                    <Route path="/form" component={Form} />
+                    <Route path="/login" component={Login} />
                 </Switch>
             </Router>
         )

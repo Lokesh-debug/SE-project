@@ -1,15 +1,23 @@
 
-
-.form {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.App {
+.Signup {
   text-align: center;
   background-color: rgba(188, 207, 223, 0.616);
 }
 
+
+.App {
+  text-align: center;
+  background-color: blueviolet;
+}
+
+h2 {
+  padding: 10px;
+  text-align: center;
+  background-color: #09d3ac;
+}
+.fill {
+  text-align: align;
+}
 .App-logo {
   height: 40vmin;
 }
@@ -37,4 +45,14 @@
   padding: 15px;
   margin:auto;
   height: 100%;
+  background-color: aqua;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin:auto;
+  height: 100%;
+  background-color: #09d3ac;
 }

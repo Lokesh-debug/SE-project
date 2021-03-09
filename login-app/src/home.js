@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
-
-import Home from './home';
-class Login extends Component {
+import './Style.css';
+class Home extends Component {
     state = {
         loggedIn: true
     }
     
     render(){
         
-        if (this.state.loggedIn) {
-           
             return (
-             <Home />   
+       
+            <h2>Welcome </h2>
+       
     
         );
     }
-}
     }
-export default Login;
+export default Home;
