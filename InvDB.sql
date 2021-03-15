@@ -1,3 +1,4 @@
+use invi
 
 Create table user(  userId int(25) NOT NULL primary key,
   username varchar(233) NOT NULL,
@@ -35,10 +36,25 @@ CREATE TABLE classroom (
 Create table course(
 Courseid varchar(100) primary key,
 Cname varchar(100),
-Cnos int(255)
+Cnos int
  );
+Alter table course drop column Cnos;
+create table course_branch(
+Courseid varchar(100) not null,
+deptid int(255) NOT NULL ,
+sec varchar(1) not null,
+primary key(deptid,sec,Courseid),
+Constraint cb_fk foreign key(deptid,sec) references branch(deptid,sec),
+Constraint cb_fk1 foreign key(Courseid) references course(Courseid)
+);
 
-
+create table branch(
+deptid int(255) NOT NULL ,
+sec varchar(1),
+nos int,
+primary key(deptid,sec),
+Constraint b_fk foreign key(deptid) references department(deptid)
+);
 CREATE TABLE  exam(
    examid int(23) NOT NULL primary key,
    examdate date NOT NULL,
