@@ -4,15 +4,22 @@ class Home extends Component {
     state = {
         loggedIn: true
     }
+    logout = () => {
+        localStorage.clear();
+        window.location.href = '/';
+    }
     
     render(){
         
             return (
        
-            <h2>Welcome </h2>
-       
+             <div className="log">
+           
+             <button className="btn-lg btn-dark btn-block" onClick={this.logout}>Logout</button>
+             </div>
+            
     
         );
     }
-    }
+}
 export default Home;
