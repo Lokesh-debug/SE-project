@@ -4,6 +4,7 @@ import { Router, Switch, Route } from "react-router-dom";
 import App from './App' ;
 import Login from './login';
 import Form from './form';
+import Sidebar from './components/Sidebar'; 
 import History from './history';
 
 export default class Routes extends Component {
@@ -14,7 +15,8 @@ export default class Routes extends Component {
                     <Route path="/" exact component={App} />
                     <Route path="/form" component={Form} />
                     <Route path="/login" component={Login} />
-                </Switch>
+                    <Route path="/sidebar" Component={Sidebar}/>
+                 </Switch>
             </Router>
         )
     }
