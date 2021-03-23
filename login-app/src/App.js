@@ -25,7 +25,7 @@ import history from './history';
       <div className="text-center pt-3">Or continue with Google account</div>
       
       <div className="text-center">
-        <a href="/Sign-up" onClick={() => history.push('/form')}>Sign-up</a>
+        <a href="/form" onClick={() => history.push('/form')}>Sign-up</a>
         <span className="p-2">|</span>
         <a href="/forgot-password">Forgot Password</a>
       </div>
