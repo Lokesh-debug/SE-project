@@ -4,9 +4,9 @@ import { Button, Form , FormGroup , Label , Input } from 'reactstrap';
 import history from './history';
 
 
- class App extends Component {
+ function App (){
   
-  render() {
+  
     return (
     <Form className='login-form'>
       <h1>
@@ -15,7 +15,7 @@ import history from './history';
       <h2 className="text-center">Login Please</h2>
       <FormGroup>
          <Label>Email</Label>
-          <Input type="email" placeholder="Email"/>
+          <Input type="text" placeholder="UserID"/>
       </FormGroup>
       <FormGroup>
          <Label>Password</Label>
@@ -33,8 +33,7 @@ import history from './history';
 
     ); 
     
-    
-}
+
 }
 
 
