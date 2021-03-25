@@ -1,20 +1,13 @@
 import React, { Component } from 'react';
 
 import Home from './home';
-class Login extends Component {
-    state = {
-        loggedIn: true
-    }
+function Login(){
     
-    render(){
-        
-        if (this.state.loggedIn) {
            
             return (
              <Home />   
     
         );
-    }
-}
+ 
     }
 export default Login;
